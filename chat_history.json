@@ -1,0 +1,87 @@
+{
+  "998dfe29-655f-4040-8bdb-6bae25848519": {
+    "id": "998dfe29-655f-4040-8bdb-6bae25848519",
+    "title": "Test",
+    "model": "mistral-large-3:675b-cloud",
+    "created": "2026-03-01T13:47:34.090863",
+    "updated": "2026-03-01T13:47:43.933416",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Test",
+        "ts": "2026-03-01T13:47:41.758638"
+      },
+      {
+        "role": "assistant",
+        "content": "It looks like you're testing things out! How can I help you today? 😊\n\nHere are a few things I can assist with:\n- **Answering questions** (science, history, tech, etc.)\n- **Solving problems** (math, coding, logic puzzles)\n- **Generating ideas** (writing, brainstorming, creativity)\n- **Explaining concepts** (simplifying complex topics)\n- **Fun stuff** (jokes, trivia, recommendations)",
+        "ts": "2026-03-01T13:47:43.933395"
+      }
+    ]
+  },
+  "0486bb0e-dd9b-41e6-9718-d6822108f3aa": {
+    "id": "0486bb0e-dd9b-41e6-9718-d6822108f3aa",
+    "title": "Explain quantum computing in simple terms",
+    "model": "qwen2.5vl:latest",
+    "created": "2026-03-01T13:59:09.837831",
+    "updated": "2026-03-01T13:59:09.848118",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Explain quantum computing in simple terms",
+        "ts": "2026-03-01T13:59:09.848118"
+      }
+    ]
+  },
+  "3d43f4df-31f2-4c0b-85d9-e5d71bd420c6": {
+    "id": "3d43f4df-31f2-4c0b-85d9-e5d71bd420c6",
+    "title": "Explain quantum computing in simple terms",
+    "model": "mistral-large-3:675b-cloud",
+    "created": "2026-03-01T13:59:18.201856",
+    "updated": "2026-03-01T13:59:22.741417",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Explain quantum computing in simple terms",
+        "ts": "2026-03-01T13:59:22.741417"
+      }
+    ]
+  },
+  "f1e10521-6cd2-425d-9a12-dd2dcf7da960": {
+    "id": "f1e10521-6cd2-425d-9a12-dd2dcf7da960",
+    "title": "Write a Python function to sort a list of dicts by a key",
+    "model": "mistral-large-3:675b-cloud",
+    "created": "2026-03-01T13:59:32.946465",
+    "updated": "2026-03-01T13:59:45.874608",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a Python function to sort a list of dicts by a key",
+        "ts": "2026-03-01T13:59:32.957956"
+      },
+      {
+        "role": "assistant",
+        "content": "# Python Function to Sort a List of Dictionaries by a Key\n\nHere's a Python function that sorts a list of dictionaries by a specified key:\n\n```python\ndef sort_dicts_by_key(list_of_dicts, key, reverse=False):\n    \"\"\"\n    Sorts a list of dictionaries by a specified key.\n\n    Parameters:\n    - list_of_dicts: List of dictionaries to be sorted\n    - key: The dictionary key to sort by\n    - reverse: If True, sorts in descending order (default: False)\n\n    Returns:\n    - A new list of dictionaries sorted by the specified key\n    \"\"\"\n    return sorted(list_of_dicts, key=lambda x: x[key], reverse=reverse)\n```\n\n## Usage Examples:\n\n```python\n# Example list of dictionaries\npeople = [\n    {'name': 'Alice', 'age': 25},\n    {'name': 'Bob', 'age': 20},\n    {'name': 'Charlie', 'age': 30}\n]\n\n# Sort by age (ascending)\nsorted_by_age = sort_dicts_by_key(people, 'age')\nprint(sorted_by_age)\n# Output: [{'name': 'Bob', 'age': 20}, {'name': 'Alice', 'age': 25}, {'name': 'Charlie', 'age': 30}]\n\n# Sort by name (descending)\nsorted_by_name = sort_dicts_by_key(people, 'name', reverse=True)\nprint(sorted_by_name)\n# Output: [{'name': 'Charlie', 'age': 30}, {'name': 'Bob', 'age': 20}, {'name': 'Alice', 'age': 25}]\n```\n\n## Alternative Version (In-place Sorting):\n\nIf you want to sort the list in-place (modifying the original list), you can use:\n\n```python\ndef sort_dicts_by_key_inplace(list_of_dicts, key, reverse=False):\n    \"\"\"\n    Sorts a list of dictionaries in-place by a specified key.\n    \"\"\"\n    list_of_dicts.sort(key=lambda x: x[key], reverse=reverse)\n```\n\n## Handling Missing Keys:\n\nIf some dictionaries might be missing the key, you can provide a default value:\n\n```python\ndef sort_dicts_by_key_safe(list_of_dicts, key, default=None, reverse=False):\n    \"\"\"\n    Sorts a list of dictionaries by a key, with a default value for missing keys.\n    \"\"\"\n    return sorted(list_of_dicts, key=lambda x: x.get(key, default), reverse=reverse)\n```",
+        "ts": "2026-03-01T13:59:45.874590"
+      }
+    ]
+  },
+  "66df9df3-05f7-4629-9fd2-8d601de20f43": {
+    "id": "66df9df3-05f7-4629-9fd2-8d601de20f43",
+    "title": "Write a Python function to sort a list of dicts by a key",
+    "model": "mistral-large-3:675b-cloud",
+    "created": "2026-03-01T14:03:20.107266",
+    "updated": "2026-03-01T14:03:27.753893",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a Python function to sort a list of dicts by a key",
+        "ts": "2026-03-01T14:03:20.122391"
+      },
+      {
+        "role": "assistant",
+        "content": "# Python Function to Sort a List of Dictionaries by a Key\n\nHere's a Python function that sorts a list of dictionaries by a specified key:\n\n```python\ndef sort_dicts_by_key(list_of_dicts, key, reverse=False):\n    \"\"\"\n    Sorts a list of dictionaries by a specified key.\n\n    Parameters:\n    - list_of_dicts: List of dictionaries to be sorted\n    - key: The dictionary key to sort by\n    - reverse: If True, sorts in descending order (default: False)\n\n    Returns:\n    - A new list of dictionaries sorted by the specified key\n    \"\"\"\n    return sorted(list_of_dicts, key=lambda x: x[key], reverse=reverse)\n```\n\n## Usage Examples:\n\n```python\n# Example list of dictionaries\npeople = [\n    {'name': 'Alice', 'age': 25},\n    {'name': 'Bob', 'age': 30},\n    {'name': 'Charlie', 'age': 20}\n]\n\n# Sort by age (ascending)\nsorted_by_age = sort_dicts_by_key(people, 'age')\nprint(sorted_by_age)\n# Output: [{'name': 'Charlie', 'age': 20}, {'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]\n\n# Sort by name (descending)\nsorted_by_name_desc = sort_dicts_by_key(people, 'name', reverse=True)\nprint(sorted_by_name_desc)\n# Output: [{'name': 'Charlie', 'age': 20}, {'name': 'Bob', 'age': 30}, {'name': 'Alice', 'age': 25}]\n```\n\n## Alternative Version (In-Place Sorting):\n\nIf you want to sort the list in-place (modifying the original list), you can use:\n\n```python\ndef sort_dicts_by_key_inplace(list_of_dicts, key, reverse=False):\n    \"\"\"\n    Sorts a list of dictionaries in-place by a specified key.\n    \"\"\"\n    list_of_dicts.sort(key=lambda x: x[key], reverse=reverse)\n```\n\n## Handling Missing Keys:\n\nIf some dictionaries might be missing the key, you can provide a default value:\n\n```python\ndef sort_dicts_by_key_safe(list_of_dicts, key, default=None, reverse=False):\n    \"\"\"\n    Sorts a list of dictionaries by a key, with a default value for missing keys.\n    \"\"\"\n    return sorted(list_of_dicts, key=lambda x: x.get(key, default), reverse=reverse)\n```",
+        "ts": "2026-03-01T14:03:27.753880"
+      }
+    ]
+  }
+}
