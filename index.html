@@ -814,7 +814,7 @@ async function openChat(id) {
 // ── New chat ──────────────────────────────────────────────────────────────────
 document.getElementById('new-chat-btn').addEventListener('click', newChat);
 async function newChat() {
-  const model = modelSel.value || 'llama2:7b';
+  const model = modelSel.value || 'mistral-large-3:675b-cloud';
   try {
     const chat = await fetch('/api/chats', {
       method: 'POST',

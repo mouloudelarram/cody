@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__, static_folder=".")
 
 OLLAMA_URL    = "http://localhost:11434"
-DEFAULT_MODEL = "llama2:7b"
+DEFAULT_MODEL = "mistral-large-3:675b-cloud"
 HISTORY_FILE  = "chat_history.json"
 
 
