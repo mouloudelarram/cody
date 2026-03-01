@@ -713,6 +713,7 @@ const headerModel = document.getElementById('header-model');
 const headerTitle = document.getElementById('header-title');
 const suggestWrap = document.getElementById('suggestions');
 const charCounter = document.getElementById('char-counter');
+const DEFAULT_MODEL = "mistral-large-3:675b-cloud";
 
 // ── Sidebar toggle ────────────────────────────────────────────────────────────
 document.getElementById('toggle-btn').addEventListener('click', () => {
@@ -733,7 +734,7 @@ async function loadModels() {
   try {
     const data = await fetch('/api/models').then(r => r.json());
     if (data.models?.length) {
-      modelSel.innerHTML = data.models.map(m => `<option value="${m}">${m}</option>`).join('');
+      modelSel.innerHTML = data.models.map(m => `<option value="${m}" ${m === DEFAULT_MODEL ? 'selected' : ''}>${m}</option>`).join('');
       headerModel.textContent = modelSel.value;
       modelSel.addEventListener('change', () => headerModel.textContent = modelSel.value);
     } else {
