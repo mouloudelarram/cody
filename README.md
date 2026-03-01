@@ -29,15 +29,15 @@ A self-hosted, privacy-first AI chat application that runs **entirely on your ow
 ┌─────────────────┬──────────────────────────────────────────┐
 │  ● Chats    [+] │  llama2:7b · response stream             │
 │─────────────────│                                          │
-│ > Today         │  Ask Cody                               │
+│ > Today         │  Ask Cody                                │
 │   How does...   │  Your private AI assistant               │
 │   Explain...    │                                          │
 │   Python sort   │  ┌─────────────────────────────────────┐ │
 │                 │  │ You                                 │ │
 │                 │  │ Explain quantum computing           │ │
 │                 │  ├─────────────────────────────────────┤ │
-│                 │  │ Cody                               │ │
-│                 │  │ Quantum computing uses qubits...▋   │ │
+│                 │  │ Cody                                │ │
+│                 │  │ Quantum computing uses qubits...▋  │ │
 │                 │  └─────────────────────────────────────┘ │
 │                 │  [Type your question here...]  [Send →]  │
 └─────────────────┴──────────────────────────────────────────┘
@@ -276,3 +276,5 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 - [Mistral AI](https://mistral.ai) — for the Mistral model
 
 ---
+# Cody v1 :
+<img width="1899" height="868" alt="image" src="https://github.com/user-attachments/assets/8e6b365e-4b7e-4e61-bbd9-ca9232957e34" />
