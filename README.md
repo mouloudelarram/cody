@@ -1,4 +1,4 @@
-# Orion AI 🤖
+# Cody AI 🤖
 
 A self-hosted, privacy-first AI chat application that runs **entirely on your own machine**. No data ever leaves your server. Built with Python (Flask) on the backend and a clean, dark terminal-aesthetic frontend powered by [Ollama](https://ollama.com).
 
@@ -29,14 +29,14 @@ A self-hosted, privacy-first AI chat application that runs **entirely on your ow
 ┌─────────────────┬──────────────────────────────────────────┐
 │  ● Chats    [+] │  llama2:7b · response stream             │
 │─────────────────│                                          │
-│ > Today         │  Ask Orion                               │
+│ > Today         │  Ask Cody                               │
 │   How does...   │  Your private AI assistant               │
 │   Explain...    │                                          │
 │   Python sort   │  ┌─────────────────────────────────────┐ │
 │                 │  │ You                                 │ │
 │                 │  │ Explain quantum computing           │ │
 │                 │  ├─────────────────────────────────────┤ │
-│                 │  │ Orion                               │ │
+│                 │  │ Cody                               │ │
 │                 │  │ Quantum computing uses qubits...▋   │ │
 │                 │  └─────────────────────────────────────┘ │
 │                 │  [Type your question here...]  [Send →]  │
@@ -48,7 +48,7 @@ A self-hosted, privacy-first AI chat application that runs **entirely on your ow
 ## 🗂️ Project Structure
 
 ```
-orion-ai/
+Cody-ai/
 ├── app.py               # Flask backend — API routes, streaming, chat persistence
 ├── index.html           # Frontend — UI, markdown renderer, SSE client
 ├── chat_history.json    # Auto-created on first message — stores all conversations
@@ -86,8 +86,8 @@ ollama pull tinyllama      # lightweight, 637 MB
 ### 3. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/orion-ai.git
-cd orion-ai
+git clone https://github.com/yourusername/Cody-ai.git
+cd Cody-ai
 ```
 
 ### 4. Install Python dependencies
@@ -188,23 +188,23 @@ nohup python app.py &
 **Option 2 — screen (recommended, lets you reattach):**
 ```bash
 sudo apt install screen
-screen -S orion
+screen -S Cody
 python app.py
 # Detach: Ctrl+A then D
-# Reattach later: screen -r orion
+# Reattach later: screen -r Cody
 ```
 
 **Option 3 — systemd service (runs on boot):**
 
-Create `/etc/systemd/system/orion.service`:
+Create `/etc/systemd/system/Cody.service`:
 ```ini
 [Unit]
-Description=Orion AI
+Description=Cody AI
 After=network.target
 
 [Service]
-WorkingDirectory=/path/to/orion-ai
-ExecStart=/usr/bin/python3 /path/to/orion-ai/app.py
+WorkingDirectory=/path/to/Cody-ai
+ExecStart=/usr/bin/python3 /path/to/Cody-ai/app.py
 Restart=always
 User=your-username
 
@@ -215,8 +215,8 @@ WantedBy=multi-user.target
 Then enable it:
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable orion
-sudo systemctl start orion
+sudo systemctl enable Cody
+sudo systemctl start Cody
 ```
 
 ---
